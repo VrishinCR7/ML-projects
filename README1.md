@@ -45,6 +45,36 @@ This repository contains two projects demonstrating the use of **Decision Tree C
   ✅ Evaluation with accuracy, precision, recall & confusion matrix  
 
 ---
+                       [ Is PetalLength <= 2.45? ]
+                          /                   \
+                     Yes /                     \ No
+                        /                       \
+                 [Predict: setosa]      [ Is PetalWidth <= 1.75? ]
+                                         /                    \
+                                    Yes /                      \ No
+                                       /                        \
+                            [ Is PetalLength <= 4.95? ]      [Predict: virginica]
+                                /             \
+                           Yes /               \ No
+                              /                 \
+                [Predict: versicolor]     [Predict: virginica]
+
+----------------------------  TITANIC (illustrative) ----------------------------
+
+                       [ Is Sex == male? ]
+                          /           \
+                      Yes /             \ No
+                         /               \
+        [ Is Pclass == 1 or 2? ]      [Predict: Survived]
+           /           \ 
+         Yes           No
+         /               \
+[ Is Age <= 15? ]     [Predict: Did not survive]
+   /     \
+ Yes     No
+ /         \
+[Predict: Survived] [Predict: Did not survive]
+
 
 Iris Dataset 🌸
 
