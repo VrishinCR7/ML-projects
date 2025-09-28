@@ -16,4 +16,3 @@ Open and run the notebooks:
 📘 DecisionTree_Iris.ipynb
 
 📘 DecisionTree_Titanic.ipynb
-📊 Results
